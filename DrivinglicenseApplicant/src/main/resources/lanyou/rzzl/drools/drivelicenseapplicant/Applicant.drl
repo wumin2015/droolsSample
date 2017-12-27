@@ -1,2 +1,8 @@
 package lanyou.rzzl.drools.drivelicenseapplicant;
 
+declare Applicant
+    name:String
+    age:int
+    valid:boolean
+end
+
