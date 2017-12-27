@@ -2,7 +2,7 @@ package lanyou.rzzl.drools.drivelicenseapplicant;
 
 rule "you can apply drivinglicense if your age is older than 18"
     when 
-        $applicant:Applicant(age>=16)
+        $applicant:Applicant(age>=18)
     then
         $applicant.setValid(true);
 end
