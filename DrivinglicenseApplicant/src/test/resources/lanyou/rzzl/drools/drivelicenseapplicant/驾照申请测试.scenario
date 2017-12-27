@@ -1,0 +1,13 @@
+<scenario>
+  <name>驾照申请测试</name>
+  <maxRuleFirings>100000</maxRuleFirings>
+  <globals/>
+  <fixtures/>
+  <rules/>
+  <inclusive>false</inclusive>
+  <packageName>lanyou.rzzl.drools.drivelicenseapplicant</packageName>
+  <imports>
+    <imports/>
+  </imports>
+  <ksessions/>
+</scenario>
