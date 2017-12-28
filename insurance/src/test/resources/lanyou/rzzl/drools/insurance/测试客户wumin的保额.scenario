@@ -1,0 +1,13 @@
+<scenario>
+  <name>测试客户wumin的保额</name>
+  <maxRuleFirings>100000</maxRuleFirings>
+  <globals/>
+  <fixtures/>
+  <rules/>
+  <inclusive>false</inclusive>
+  <packageName>lanyou.rzzl.drools.insurance</packageName>
+  <imports>
+    <imports/>
+  </imports>
+  <ksessions/>
+</scenario>
