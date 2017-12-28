@@ -1,7 +1,5 @@
 package lanyou.rzzl.drools.insurance;
 no-loop
-
-
 declare User
     age : int;
     validFlag : boolean;
