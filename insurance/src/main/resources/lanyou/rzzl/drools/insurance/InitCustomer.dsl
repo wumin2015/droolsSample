@@ -10,7 +10,7 @@ salience 1000
     then
         System.out.println("valid applicant for["+$u.getUserId()+"] and validFlag is["+$u.isValidFlag()+"]");
         User userVO=new User();
-        userVO.setAge( $u.getAge());
+        userVO.setAge($u.getAge());
         userVO.setValidFlag($u.isValidFlag());
         insert(userVO);
 end
