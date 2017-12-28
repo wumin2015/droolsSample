@@ -16,14 +16,17 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>0</executionTimeResult>
-      <numberOfRulesFired>0</numberOfRulesFired>
+      <executionTimeResult>19</executionTimeResult>
+      <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>valid</fieldName>
-          <expected>false</expected>
+          <expected>true</expected>
+          <actualResult>true</actualResult>
+          <successResult>false</successResult>
+          <explanation>[applicant] field [valid] was [true] expected [false].</explanation>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
@@ -32,7 +35,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2017-12-28 07:00:39.458 UTC</lastRunResult>
+  <lastRunResult>2017-12-28 07:05:18.780 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>lanyou.rzzl.drools.drivelicenseapplicant</packageName>
