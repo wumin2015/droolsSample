@@ -12,23 +12,27 @@
           <nature>4</nature>
         </field-data>
       </fieldData>
-      <name>age</name>
+      <name>applicant</name>
       <isModify>false</isModify>
     </fact-data>
-    <execution-trace/>
+    <execution-trace>
+      <executionTimeResult>0</executionTimeResult>
+      <numberOfRulesFired>0</numberOfRulesFired>
+    </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
-          <fieldName>age</fieldName>
-          <expected>20</expected>
+          <fieldName>valid</fieldName>
+          <expected>false</expected>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
       </fieldValues>
-      <name>age</name>
+      <name>applicant</name>
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
+  <lastRunResult>2017-12-28 07:00:39.458 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>lanyou.rzzl.drools.drivelicenseapplicant</packageName>
