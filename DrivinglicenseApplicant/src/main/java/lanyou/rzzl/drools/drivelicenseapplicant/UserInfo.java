@@ -6,12 +6,45 @@ package lanyou.rzzl.drools.drivelicenseapplicant;
 
 public class UserInfo implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public UserInfo() {
-    }
+	@org.kie.api.definition.type.Label(value = "\u7528\u6237id")
+	private java.lang.Integer user_id;
+	private java.lang.String user_name;
+	private java.lang.Integer user_age;
 
+	public UserInfo() {
+	}
 
+	public java.lang.Integer getUser_id() {
+		return this.user_id;
+	}
 
+	public void setUser_id(java.lang.Integer user_id) {
+		this.user_id = user_id;
+	}
+
+	public java.lang.String getUser_name() {
+		return this.user_name;
+	}
+
+	public void setUser_name(java.lang.String user_name) {
+		this.user_name = user_name;
+	}
+
+	public java.lang.Integer getUser_age() {
+		return this.user_age;
+	}
+
+	public void setUser_age(java.lang.Integer user_age) {
+		this.user_age = user_age;
+	}
+
+	public UserInfo(java.lang.Integer user_id, java.lang.String user_name,
+			java.lang.Integer user_age) {
+		this.user_id = user_id;
+		this.user_name = user_name;
+		this.user_age = user_age;
+	}
 
 }
