@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>lanyou.rzzl.drools</groupId>
   <artifactId>insurance</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.3</version>
   <name>insurance</name>
   <description>保险，根据客户计算其保额</description>
   <dependencies>
