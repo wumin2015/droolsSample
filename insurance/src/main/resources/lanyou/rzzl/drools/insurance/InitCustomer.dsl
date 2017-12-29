@@ -1,4 +1,4 @@
-package lanyou.rzzl.drools.insurance;
+package lanyou.rzzl.drools.model;
 no-loop
 declare User
     age : int;
