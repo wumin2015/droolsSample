@@ -11,7 +11,8 @@ salience 1000
         u : UserInfoBean()
     then
         User user=new User();
-        user.setAge(u.getAge());
+        //user.setAge(u.getAge());
+        user.setAge(u.getUserId());
         System.out.println("valid applicant for["+u.getUserId()+"] and validFlag is["+u.isValidFlag()+"]");
         insert(user);
 end
