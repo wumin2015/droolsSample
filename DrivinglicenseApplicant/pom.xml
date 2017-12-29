@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>lanyou.rzzl.drools</groupId>
   <artifactId>drivelicenseApplicant</artifactId>
-  <version>1.4</version>
+  <version>1.5</version>
   <name>DrivinglicenseApplicant</name>
   <description>参考官网驾照申请示例</description>
   <repositories>
