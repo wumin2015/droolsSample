@@ -11,6 +11,8 @@ public class UserInfo implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("用户id")
 	@org.kie.api.definition.type.Description("用户id")
 	private java.lang.Integer user_id;
+	@org.kie.api.definition.type.Label("用户姓名")
+	@org.kie.api.definition.type.Description("用户姓名")
 	private java.lang.String user_name;
 	private java.lang.Integer user_age;
 
