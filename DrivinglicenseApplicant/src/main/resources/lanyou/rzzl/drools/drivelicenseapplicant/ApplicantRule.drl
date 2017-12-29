@@ -6,6 +6,8 @@ rule "you can apply drivinglicense if your age is older than 18"
     when 
         $u:UserInfo(user_id!=null)
     then
-        UserInfo ui = new UserInfo(1,"wumin",29);
-        insert(ui);
+        //UserInfo ui = new UserInfo(1,"wumin",29);
+        //insert(ui);
+        $u.setUser_name("wumin");
+        $u.setUser_age(29);
 end
