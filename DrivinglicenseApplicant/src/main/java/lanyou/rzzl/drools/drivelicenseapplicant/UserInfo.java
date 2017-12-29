@@ -8,7 +8,8 @@ public class UserInfo implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "\u7528\u6237id")
+	@org.kie.api.definition.type.Label("用户id")
+	@org.kie.api.definition.type.Description("用户id")
 	private java.lang.Integer user_id;
 	private java.lang.String user_name;
 	private java.lang.Integer user_age;
