@@ -3,7 +3,7 @@ package lanyou.rzzl.drools.drivelicenseapplicant;
 import lanyou.rzzl.drools.drivelicenseapplicant.UserInfo;
 
 rule "you can apply drivinglicense if your age is older than 18"
-    no-loop true
+    //no-loop true
     when 
         $u:UserInfo(user_id!=null)
     then
