@@ -7,10 +7,11 @@ rule "you can apply drivinglicense if your age is older than 18"
     when 
         $u:UserInfo(user_id!=null)
     then
-        System.out.println("userid is not null!");
+        System.out.println("userid is not null123321!");
         //UserInfo ui = new UserInfo(1,"wumin",29);
         //insert(ui);
         $u.setUser_name("wuminhaha");
         $u.setUser_age(29);
-        modify($u) { setUser_name("wumin_excellent") };
+        //modify($u) { setUser_name("wumin_excellent") };
+        insert($u);
 end
