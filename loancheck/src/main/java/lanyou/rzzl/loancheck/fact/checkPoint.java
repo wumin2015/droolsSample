@@ -10,13 +10,14 @@ public class checkPoint implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label("sex")
+	@org.kie.api.definition.type.Label("性别")
+	@org.kie.api.definition.type.Description("1：男，2：女")
 	private java.lang.Integer sex;
 
-	@org.kie.api.definition.type.Label(value = "\u5E74\u9F84")
+	@org.kie.api.definition.type.Label("年龄")
 	private java.lang.Integer age;
 
-	@org.kie.api.definition.type.Label(value = "\u5E74\u6536\u5165")
+	@org.kie.api.definition.type.Label("年收入")
 	private java.lang.Double income;
 
 	public checkPoint() {
