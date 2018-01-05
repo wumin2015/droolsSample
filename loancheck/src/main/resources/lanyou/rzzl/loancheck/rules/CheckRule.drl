@@ -1,2 +1,24 @@
 package lanyou.rzzl.loancheck.rules;
 
+import lanyou.rzzl.loancheck.fact.CheckPoint;
+
+no-loop
+
+rule "check-pass"
+    when 
+        p:CheckPoint(age>30&&income>50000)
+    then
+        p.setIsPass(true);
+        p.setApprovalAmount(80000);
+        insert(p);
+        System.out.println("贷款审核通过");
+end
+
+rule "check-unpass"
+    when 
+        p:CheckPoint(age<18||income<30000)
+    then
+        p.setIsPass(false);
+        insert(p);
+        System.out.println("贷款审核未通过");
+end
