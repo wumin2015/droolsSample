@@ -6,12 +6,65 @@ package lanyou.rzzl.loancheck.fact;
 
 public class CheckPoint implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public CheckPoint() {
-    }
+	private java.lang.Integer age;
+	private java.lang.Double income;
+	private java.lang.Boolean hasOtherLoan;
+	private java.lang.Boolean isPass;
+	private java.lang.Double approvalAmount;
 
+	public CheckPoint() {
+	}
 
+	public java.lang.Integer getAge() {
+		return this.age;
+	}
 
+	public void setAge(java.lang.Integer age) {
+		this.age = age;
+	}
+
+	public java.lang.Double getIncome() {
+		return this.income;
+	}
+
+	public void setIncome(java.lang.Double income) {
+		this.income = income;
+	}
+
+	public java.lang.Boolean getHasOtherLoan() {
+		return this.hasOtherLoan;
+	}
+
+	public void setHasOtherLoan(java.lang.Boolean hasOtherLoan) {
+		this.hasOtherLoan = hasOtherLoan;
+	}
+
+	public java.lang.Boolean getIsPass() {
+		return this.isPass;
+	}
+
+	public void setIsPass(java.lang.Boolean isPass) {
+		this.isPass = isPass;
+	}
+
+	public java.lang.Double getApprovalAmount() {
+		return this.approvalAmount;
+	}
+
+	public void setApprovalAmount(java.lang.Double approvalAmount) {
+		this.approvalAmount = approvalAmount;
+	}
+
+	public CheckPoint(java.lang.Integer age, java.lang.Double income,
+			java.lang.Boolean hasOtherLoan, java.lang.Boolean isPass,
+			java.lang.Double approvalAmount) {
+		this.age = age;
+		this.income = income;
+		this.hasOtherLoan = hasOtherLoan;
+		this.isPass = isPass;
+		this.approvalAmount = approvalAmount;
+	}
 
 }
