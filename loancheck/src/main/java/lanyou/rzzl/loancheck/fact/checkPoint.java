@@ -6,13 +6,9 @@ package lanyou.rzzl.loancheck.fact;
 
 @org.kie.api.definition.type.Label("审核要点")
 @org.kie.api.definition.type.Description("描述审核要点")
-public class checkPoint implements java.io.Serializable {
+public class CheckPoint implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
-
-	@org.kie.api.definition.type.Label("性别")
-	@org.kie.api.definition.type.Description("1：男，2：女")
-	private java.lang.Integer sex;
 
 	@org.kie.api.definition.type.Label("年龄")
 	private java.lang.Integer age;
@@ -20,15 +16,16 @@ public class checkPoint implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("年收入")
 	private java.lang.Double income;
 
-	public checkPoint() {
-	}
+	@org.kie.api.definition.type.Label("是否有其他贷款")
+	private java.lang.Boolean hasOtherLoan;
 
-	public java.lang.Integer getSex() {
-		return this.sex;
-	}
+	@org.kie.api.definition.type.Label("贷款是否审核通过")
+	private java.lang.Boolean isPass;
 
-	public void setSex(java.lang.Integer sex) {
-		this.sex = sex;
+	@org.kie.api.definition.type.Label("审批金额")
+	private java.lang.Double approvalAmount;
+
+	public CheckPoint() {
 	}
 
 	public java.lang.Integer getAge() {
@@ -47,11 +44,38 @@ public class checkPoint implements java.io.Serializable {
 		this.income = income;
 	}
 
-	public checkPoint(java.lang.Integer sex, java.lang.Integer age,
-			java.lang.Double income) {
-		this.sex = sex;
+	public java.lang.Boolean getHasOtherLoan() {
+		return this.hasOtherLoan;
+	}
+
+	public void setHasOtherLoan(java.lang.Boolean hasOtherLoan) {
+		this.hasOtherLoan = hasOtherLoan;
+	}
+
+	public java.lang.Boolean getIsPass() {
+		return this.isPass;
+	}
+
+	public void setIsPass(java.lang.Boolean isPass) {
+		this.isPass = isPass;
+	}
+
+	public java.lang.Double getApprovalAmount() {
+		return this.approvalAmount;
+	}
+
+	public void setApprovalAmount(java.lang.Double approvalAmount) {
+		this.approvalAmount = approvalAmount;
+	}
+
+	public CheckPoint(java.lang.Integer age, java.lang.Double income,
+			java.lang.Boolean hasOtherLoan, java.lang.Boolean isPass,
+			java.lang.Double approvalAmount) {
 		this.age = age;
 		this.income = income;
+		this.hasOtherLoan = hasOtherLoan;
+		this.isPass = isPass;
+		this.approvalAmount = approvalAmount;
 	}
 
 }
