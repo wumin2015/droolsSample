@@ -9,7 +9,7 @@ rule "check-pass"
         p:CheckPoint(age>30&&income>50000)
     then
         p.setIsPass(true);
-        p.setApprovalAmount(80000);
+        p.setApprovalAmount(80000.00);
         insert(p);
         System.out.println("贷款审核通过");
 end
