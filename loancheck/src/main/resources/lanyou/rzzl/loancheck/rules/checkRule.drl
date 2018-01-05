@@ -1,7 +1,0 @@
-package lanyou.rzzl.loancheck.rules;
-
-no-loop
-
-rule "loan-pass"
-    when 
-        p:checkPoint()
