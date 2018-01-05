@@ -3,13 +3,14 @@ package lanyou.rzzl.drools.drivelicenseapplicant;
 import lanyou.rzzl.drools.drivelicenseapplicant.UserInfo;
 
 rule "you can apply drivinglicense if your age is older than 18"
-    //no-loop true
+    no-loop
     when 
         $u:UserInfo(user_id!=null)
     then
+        System.out.println("userid is not null!");
         //UserInfo ui = new UserInfo(1,"wumin",29);
         //insert(ui);
         $u.setUser_name("wuminhaha");
         $u.setUser_age(29);
-        insert($u);
+        modify($u) { setUser_name("wumin_excellent") };
 end
