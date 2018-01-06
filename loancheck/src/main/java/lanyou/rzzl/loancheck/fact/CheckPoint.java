@@ -11,6 +11,7 @@ public class CheckPoint implements java.io.Serializable {
 	@org.kie.api.definition.type.Description("年龄")
 	private java.lang.Integer age;
 	private java.lang.Double income;
+	@org.kie.api.definition.type.Description("是否有其他贷款")
 	private java.lang.Boolean hasOtherLoan;
 	private java.lang.Boolean isPass;
 	@org.kie.api.definition.type.Description("审批通过金额")
