@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
 
-  <appender name="consoleAppender" class="ch.qos.logback.core.ConsoleAppender">
+  <appender name="consoleAppender-AAA" class="ch.qos.logback.core.ConsoleAppender">
     <encoder>
       <!-- %l lowers performance -->
       <!--<pattern>%d [%t] %-5p %l%n  %m%n</pattern>-->
@@ -12,7 +12,7 @@
   <logger name="org.jbpm" level="info"/>
   
   <root level="error">
-    <appender-ref ref="consoleAppender" />
+    <appender-ref ref="consoleAppender-AAA" />
   </root>
 
 </configuration>
