@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>lanyou.rzzl</groupId>
   <artifactId>loancheck</artifactId>
-  <version>1.0</version>
+  <version>1.1</version>
   <name>loancheck</name>
   <description>融资租赁贷款审核</description>
   <repositories>
